@@ -152,19 +152,19 @@ const KolbeScreen = ({ isActive }) => {
     setEntered(false);setActive(null);
   }, [isActive]);
   const modes = [
-    { id:"ff", label:"Fact Finder", score:7, color:P.blueLight, zone:"Accommodate",
-      bar:"Researches deeply before committing. Needs the full picture — background, nuance, edge cases — before moving forward.",
-      detail:"A 7 means Travis uses thorough research as a primary action strategy. He doesn't skim the surface — he builds comprehensive understanding. In product ops this is a superpower: his dashboards, process docs, and roadmap work are trusted because he did the homework others skipped." },
-    { id:"ft", label:"Follow Thru", score:8, color:P.teal, zone:"Initiate",
-      bar:"His strongest mode. Travis builds systems, creates structure, and follows through on every commitment — even when nobody's watching.",
-      detail:"An 8 is his signature. He doesn't just say he'll do something — he builds a system around it. Templates, trackers, documented processes, reliable deadlines. Teams feel the difference when he's in the room and when he isn't." },
-    { id:"qs", label:"Quick Start", score:2, color:P.warm, zone:"Prevent",
-      bar:"He resists jumping in without a plan. Impulsive action feels risky, not exciting. He needs to think before committing.",
-      detail:"A 2 means he prevents Quick Start risk — not a weakness, a deliberate counterbalance. He's the person who asks 'have we thought this through?' before the team charges off a cliff. Others may mistake his pause for hesitation. It's not — it's quality control." },
-    { id:"imp", label:"Implementor", score:3, color:P.sage, zone:"Resist",
-      bar:"Conceptual over physical. Travis works best with ideas, frameworks, and systems — not building things with his hands.",
-      detail:"A 3 means he resists hands-on, tangible implementation. His tools are words, slide decks, spreadsheets, and conversation — not prototypes or physical builds. This aligns perfectly with product ops: he architects the process, others execute the mechanics." },
-  ];
+  { id:"ff", label:"Fact Finder", score:7, color:P.blueLight, zone:"Accommodate",
+    bar:"Gathers information thoroughly before acting. Seeks context, background, and detail — not to stall, but to move with confidence.",
+    detail:"A 7 means research and inquiry are core to how Travis operates. He asks good questions, digs into the details, and wants to understand the full picture before committing. The upside: his decisions are well-grounded. The watch-out: he may keep gathering past the point of diminishing returns." },
+  { id:"ft", label:"Follow Thru", score:8, color:P.teal, zone:"Initiate",
+    bar:"His strongest mode. Naturally builds systems, establishes order, and sees things through — consistency and structure come instinctively.",
+    detail:"An 8 means Follow Thru is the engine. Travis organizes naturally, creates process where there isn't one, and follows through on commitments reliably. He works best when there's a clear structure to build within or improve — and he'll often create that structure himself if it doesn't exist." },
+  { id:"qs", label:"Quick Start", score:2, color:P.warm, zone:"Prevent",
+    bar:"Resists acting before thinking. Prefers a plan over a pivot — improvisation and rapid-fire change are draining, not energizing.",
+    detail:"A 2 means Travis prevents impulsive risk — he's a stabilizing force when others want to move fast without a plan. He'll ask the question nobody else thought to ask. The tension: in fast-moving environments, his deliberate pace can read as hesitation. It isn't — it's due diligence." },
+  { id:"imp", label:"Implementor", score:3, color:P.sage, zone:"Resist",
+    bar:"Works in the abstract. Ideas, systems, and frameworks are his medium — not physical or hands-on execution.",
+    detail:"A 3 means tangible, hands-on building isn't where Travis naturally operates. He thinks in concepts, frameworks, and structure. Give him a problem to think through or a system to design — not a prototype to build or a tool to fix." },
+];
   return (
     <Screen isActive={isActive} bg={`linear-gradient(160deg,${P.navy} 0%,${P.navyLight} 60%,${P.blue}55 100%)`}>
       <ScrollArea>
